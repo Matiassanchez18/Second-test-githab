@@ -1,0 +1,52 @@
+.ImgCarousel {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 50% 20%;
+  
+  }
+
+.ImgCarousel2{
+     width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position:10% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .imagenCarousel{
+      height: 100px;
+      object-position:50% 20%;
+    }
+    
+    .ImgCarousel2 {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: 78% 50%;
+    }
+    .ImgCarousel3 {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .ImagenError{
+      width: 50% !important;
+    }
+  }
+
