@@ -21,13 +21,12 @@
     />
     <title>Termos</title>
   </head>
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-primary-subtle">
-        <div class="container">
-          <a class="navbar-brand fs-3" href="#"
-            ><img src="./assets/logo1.PNG" class="logo" alt="" /> TusTermos</a
-          >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TusTermos</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -42,19 +41,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Localidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Contactos</a>
+                <a class="nav-link" href="#">Contactos</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle fs-5"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -63,10 +59,10 @@
                   Tipos de termos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item fs-5" href="#">Pequeños</a></li>
-                  <li><a class="dropdown-item fs-5" href="#">Medianos</a></li>
+                  <li><a class="dropdown-item" href="#">Gandes</a></li>
+                  <li><a class="dropdown-item" href="#">medianos</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item fs-5" href="#">Grandes</a></li>
+                  <li><a class="dropdown-item" href="#">Pequeños</a></li>
                 </ul>
               </li>
             </ul>
@@ -107,9 +103,9 @@
               class="d-block ImgCarousel ImgCarousel2"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>¡Mantén tu bebida perfecta todo el día!</h5>
-              <p>
+            <div class="carousel-caption d-none d-md-block bg-info">
+              <h5 class="fs-2">¡Mantén tu bebida perfecta todo el día!</h5>
+              <p class="fs-4">
                 Nuestros termos están diseñados para conservar la temperatura de
                 tus bebidas, ya sea caliente o fría.
               </p>
@@ -121,9 +117,9 @@
               class="d-block ImgCarousel"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Diseño elegante y funcional</h5>
-              <p>
+            <div class="carousel-caption d-none d-md-block bg-warning">
+              <h5 class="fs-2">Diseño elegante y funcional</h5>
+              <p class="fs-4">
                 Desde la oficina hasta tus aventuras al aire libre, nuestros
                 termos combinan estilo y rendimiento.
               </p>
@@ -135,9 +131,9 @@
               class="d-block ImgCarousel2 .ImgCarousel2"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Tecnología de aislamiento avanzada</h5>
-              <p>
+            <div class="carousel-caption d-none d-md-block bg-light">
+              <h5 class="fs-2">Tecnología de aislamiento avanzada</h5>
+              <p class="fs-4">
                 Disfruta de tu café caliente por horas o tus bebidas frías en su
                 punto durante todo el día.
               </p>
@@ -165,37 +161,188 @@
         </button>
       </section>
 
-      <section class="container bg-primary-subtle">
-      <h2 class="text-center pt-4">Inicia sesion aqui</h2>
-      <p class="text-center mt-2">Para recibir informacion sobre nuevos termos a la venta inicia sesion, si no tienes cuenta registrete.</p>
-      
-      <div class="row justify-content-center">
-      <button class="btn btn-primary text-light col-2 me-3 mt-2" type="button"  data-bs-toggle="modal" data-bs-target="#ModalSesion">Iniciar sesion</button>
-    </div>
+      <section class="container bg-primary-subtle mt-5">
+        <h2 class="text-center pt-4">Inicia sesion aqui</h2>
+        <p class="text-center mt-2">
+          Para recibir informacion sobre nuevos termos a la venta inicia sesion,
+          si no tienes cuenta registrete.
+        </p>
+
+        <div class="row justify-content-center">
+          <button
+            class="btn btn-primary text-light col-2 me-3 mt-2"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalSesion"
+          >
+            Iniciar sesion
+          </button>
+        </div>
       </section>
 
+      <!-- Modal iniciar sesion -->
+      <section
+        class="modal fade"
+        id="ModalSesion"
+        tabindex="-1"
+        aria-labelledby="ModalSesionLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalSesionLabel">
+                Iniciar Sesion
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="Usuario o Email" class="form-label"
+                    >Usuario o Email</label
+                  >
+                  <input
+                    type="email, text"
+                    placeholder="Ingrese su gmail o nombre de usuario"
+                    class="form-control"
+                    id="Usuario o Email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </div>
 
-<!-- Modal -->
-<div class="modal fade" id="ModalSesion" tabindex="-1" aria-labelledby="ModalSesionLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="ModalSesionLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                <div class="mb-3">
+                  <label for="contraseña" class="form-label"
+                    >Ingrese su contraseña</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Ingrese su contraseña"
+                    class="form-control"
+                    id="contraseña"
+                    required
+                    minlength="5"
+                    maxlength="100"
+                  />
+                </div>
 
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-primary">Iniciar sesion</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-primary text-light"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalRegistrarse"
+              >
+                Registrarse
+              </button>
 
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Modal registrarse -->
+      <section
+        class="modal fade"
+        id="ModalRegistrarse"
+        tabindex="-1"
+        aria-labelledby="ModalRegistrarseLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="ModalRegistrarseLabel">
+                Registrarse
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="Email" class="form-label">Email</label>
+                  <input
+                    type="email "
+                    placeholder="Ingrese su gmail"
+                    class="form-control"
+                    id="Email"
+                    required
+                    minlength="10"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="contraseña" class="form-label"
+                    >Ingrese su contraseña</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Ingrese su contraseña"
+                    class="form-control"
+                    id="contraseña"
+                    required
+                    minlength="5"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="contraseña" class="form-label"
+                    >Repita su contraseña</label
+                  >
+                  <input
+                    required
+                    type="text"
+                    placeholder="Repita se contraseña"
+                    class="form-control"
+                    id="contraseña"
+                    required
+                    minlength="5"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-primary">Registrarse</button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                salir
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
