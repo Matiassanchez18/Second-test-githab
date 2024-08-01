@@ -33,12 +33,15 @@
       height: 100px;
       object-position:50% 20%;
     }
+    .logo{
+      width: 0%;
+    }
     
     .ImgCarousel2 {
         width: 100%;
         height: 700px;
         object-fit: cover;
-        object-position: 78% 50%;
+        object-position: 76% 50%;
     }
     .ImgCarousel3 {
         width: 100%;
