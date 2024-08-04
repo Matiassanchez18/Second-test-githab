@@ -16,9 +16,17 @@
   width: 10%;
 }
 
+ 
 
+.img-termos{
+  height: 570px;
+  width: 100%;
+  object-fit: cover;
+}
 
-
+.Boton-sesion{
+  width: 25%;
+}
 
 
 
